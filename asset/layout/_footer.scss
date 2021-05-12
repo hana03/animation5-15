@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.footer {
+    text-align: center;
+    background-color: $ba-color-black;
+    padding: 30px 0;
+
+    small {
+
+        color: $white;
+    }
+}

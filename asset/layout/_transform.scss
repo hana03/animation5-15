@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+
+@import "asset/libs/_mixin.scss";
+
+.about02-wrapper {
+    padding: 0 10px;
+    padding-top: 80px;
+
+    .main-ttl {
+        @include main-ttl;
+    }
+
+    .about-sec {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $green;
+            transition-property: transform;
+            transition-duration: 1s;
+            transform-origin: top left;
+        }
+
+        .box:hover {
+            transform: scale(0.5, 1);
+
+        }
+
+        .box-1 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $carrot;
+            transition-property: transform;
+            transition-duration: 1s;
+            transform-origin: top right;
+        }
+
+        .box-1:hover {
+            transform: rotate(30deg);
+
+        }
+
+        .box-2 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $pink-01;
+            transition-property: all;
+            transition-duration: 1s;
+            // transform-origin: top right;
+        }
+
+        .box-2:hover {
+            transform: translate(30px);
+            background-color: $pink;
+
+        }
+
+        .box-3 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $carrot;
+            transition-property: transform;
+            transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.66, 0, 0, 2.32);
+        }
+
+        .box-3:hover {
+            transform: translate(100px);
+
+        }
+
+        .box-4 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $yelloo;
+            animation-name: move;
+            animation-duration: 2s;
+        }
+
+        @keyframes move {
+            0% {
+              transform: none;
+            }
+            80% {
+              transform: translateX(200px) rotate(360deg);
+            }
+            100% {
+              transform: translateX(300px) rotate(360deg);
+            }
+          }
+
+          .box-5 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $green;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+        }
+       
+        @keyframes move {
+            0% {
+              transform: none;
+            }
+            80% {
+              transform: translateX(200px) rotate(360deg);
+            }
+            100% {
+              transform: translateX(300px) rotate(360deg);
+            }
+          }
+    }
+}

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.header {
+    height: 80px;
+    background-color: $ba-color-black;
+    padding: 0 10px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+
+    .header-logo {
+        font-size: 2.4rem;
+        line-height: 80px;
+        color: $white;
+
+    }
+}

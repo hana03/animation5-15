@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.about-wrapper {
+    padding: 0 10px;
+    padding-top: 80px;
+
+    .main-ttl {
+        @include main-ttl;
+    }
+
+    .about-sec {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $carrot;
+            transition-property: border-radius;
+            transition-duration: 1s;
+        }
+
+        .box:hover {
+            border-radius: 50%;
+        }
+
+        .box-1 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $yelloo;
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+
+        .box-1:hover {
+            transform: translate(50px, 20px);
+        }
+
+        .box-2 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $green;
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+
+        .box-2:hover {
+            transform: rotate(30deg);
+        }
+
+        .box-3 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $pink-01;
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+
+        .box-3:hover {
+            transform: scale(.5, 2);
+        }
+
+        .box-4 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $pink;
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+
+        .box-4:hover {
+            transform: translateX(100px) rotate(30deg);
+        }
+
+        .box-5 {
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            background-color: $carrot;
+            transition-property: transform;
+            transition-duration: 1s;
+        }
+
+        .box-5:hover {
+            transform: rotate(30deg) translateX(100px);
+        }
+    }
+}
+
+@include tb {
+    .about-wrapper {
+        widows: 1200px;
+        margin: 0 auto;
+
+    }
+}

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+$ba-color-black:rgba(31, 34, 33, 0.6);
+$font-color :#525252;
+$carrot:#ea5e29;
+$yelloo:#ecaf1f;
+$green:#5e9b84;
+$pink-01:#f05e59;
+$pink:#dcbdaf;
+$white:#fff;
+
+
+@mixin main-ttl {
+    font-size: 3.0rem;
+    line-height: 2.4em;
+    letter-spacing: 0.05em;
+    color: $font-color;
+    margin-bottom: 35px;
+    text-align: center;
+}
+@mixin main-ttl-pc {
+    font-size: 4.0rem;
+    line-height: 2.4em;
+    letter-spacing: 0.05em;
+    color: $font-color;
+    margin-bottom: 45px;
+}
+
+
+@mixin pc {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media screen and (min-width:900px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (min-width:640px) {
+        @content;
+    }
+}
